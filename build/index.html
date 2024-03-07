@@ -10,412 +10,740 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <center>
-      <table>
-        <tr>
-          <td>
-            <div class="container">
-              <table>
-                <tr>
-                  <td>
-                    <table class="header" role="presentation">
+    <table>
+      <tr>
+        <td>
+          <div class="container">
+            <table>
+              <tr>
+                <td>
+                  <table class="header" role="presentation">
+                    <tr>
+                      <td class="header__wrapper">
+                        <table>
+                          <tr>
+                            <td class="header__top">
+                              <table role="presentation">
+                                <tr>
+                                  <td class="header__logo">
+                                    <svg width="24" height="24" aria-hidden="true">
+                                      <use xlink:href="img/sprite_auto.svg#avatar"></use>
+                                    </svg>
+                                  </td>
+                                  <td class="header__text">
+                                    <p class="text text--regular">m.shnaliev</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="header__title">
+                              <h2 class="title title--h2">KPI рекрутеров</h2>
+                              <p class="text text--regular">Обновлено:
+                                <time datetime="2023-08-17T17:30:00">17 августа 2023, 17:30</time>
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <div class="main">
+                    <table class="main-table" role="presentation">
                       <tr>
-                        <td class="header__wrapper">
-                          <table>
+                        <td class="main-table__block">
+                          <table class="hero" role="presentation">
                             <tr>
-                              <td class="header__top">
+                              <td class="hero__wrapper">
                                 <table role="presentation">
                                   <tr>
-                                    <td class="header__logo">
-                                      <svg width="24" height="24" aria-hidden="true">
-                                        <use xlink:href="img/sprite_auto.svg#avatar"></use>
-                                      </svg>
+                                    <td class="hero__about adaptive-block">
+                                      <!-- Для возможности замены картинки без пересборки проекта использовал к инлайновым стилям.-->
+                                      <!-- Иначе был бы див с позиционированием, но позиционирование нельзя использовать по ТЗ.-->
+                                      <div class="background-image" style="background-image: url(img/img.svg);">
+                                        <h2 class="title title--hero">KPI рекрутеров</h2>
+                                      </div>
                                     </td>
-                                    <td class="header__text">
-                                      <p class="text text--regular">m.shnaliev</p>
+                                    <td class="adaptive-block">
+                                      <div class="hero__info">
+                                        <table role="presentation">
+                                          <tr>
+                                            <td>
+                                              <h4 class="title title--h4">Полезная информация</h4>
+                                              <ul class="hero__list">
+                                                <li class="hero__link"><a class="link" href="#" target="_blank" rel="nofollow noopener noreferrer">Борд с&nbsp;автоматическим расчётом KPI</a>
+                                                </li>
+                                                <li class="hero__link"><a class="link" href="#" target="_blank" rel="nofollow noopener noreferrer">FAQ</a>
+                                                </li>
+                                                <li class="hero__link"><a class="link" href="#" target="_blank" rel="nofollow noopener noreferrer">Схема KPI до&nbsp;01.04.2023 года</a>
+                                                </li>
+                                              </ul>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
                                     </td>
                                   </tr>
                                 </table>
                               </td>
                             </tr>
                             <tr>
-                              <td class="header__title">
-                                <h2 class="title title--h2">KPI рекрутеров</h2>
-                                <p class="text text--regular">Обновлено:
-                                  <time datetime="2023-17-08T17:30:00">17 августа 2023, 17:30</time>
-                                </p>
+                              <td>
+                                <table role="presentation">
+                                  <tr>
+                                    <td class="hero__type adaptive-block">
+                                      <div class="hero__type-block">
+                                        <h3 class="title title--h3">KPI РФ</h3>
+                                        <table class="hero__btn-wrapper adaptive-block" role="presentation">
+                                          <tr class="adaptive-block">
+                                            <td class="adaptive-block"><a class="link btn is-disabled" href="#">Русская версия</a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </td>
+                                    <td class="hero__type hero__type--long adaptive-block">
+                                      <div class="hero__type-block">
+                                        <h3 class="title title--h3">KPI Межнар<span class="title__subtext">KPI International</span></h3>
+                                        <table class="hero__btn-wrapper adaptive-block" role="presentation">
+                                          <tr class="adaptive-block">
+                                            <td class="adaptive-block">
+                                              <button class="btn" type="button"><span class="btn__title">Русская версия</span>
+                                              </button>
+                                              <button class="btn" type="button"><span class="btn__title">English version</span>
+                                              </button>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
                               </td>
                             </tr>
                           </table>
                         </td>
                       </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <table>
-                <tr>
-                  <td>
-                    <main>
-                      <table class="main-table" role="presentation">
-                        <tr>
-                          <td class="main-table__block">
-                            <table class="hero" role="presentation">
-                              <tr>
-                                <td class="hero__wrapper">
+                      <tr>
+                        <td class="main-table__block">
+                          <table class="period" role="presentation">
+                            <tr>
+                              <td>
+                                <h2 class="title title--h2">Период премирования</h2>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table class="period__wrapper adaptive-block" role="presentation">
+                                  <tr class="adaptive-block">
+                                    <td class="adaptive-block">
+                                      <div class="period__info">
+                                        <p class="text text--regular">Рекрутеры, старшие и&nbsp;младшие:</p>
+                                        <h3 class="title title--h3">Ежеквартально по&nbsp;схеме KPI</h3>
+                                      </div>
+                                    </td>
+                                    <td class="adaptive-block">
+                                      <div class="period__info">
+                                        <p class="text text--regular">Ведущие рекрутеры:</p>
+                                        <h3 class="title title--h3">Полугодовые премии по&nbsp;итогам ревью</h3>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="main-table__block">
+                          <table class="grades" role="presentation">
+                            <tr>
+                              <td class="grades__head">
+                                <h2 class="title title--h2">Количество и&nbsp;грейды принятых предложений о&nbsp;работе</h2>
+                                <p class="text text--big">Каждой вакансии присвоен свой процентный вес&nbsp;<span class="text__sub">см. таблицу ниже.</span></p>
+                                <p class="text text--big">Он&nbsp;зависит от&nbsp;грейда и&nbsp;специальности: Разработка, IT&nbsp;(около-разработка), Продажи или Бизнес</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table role="presentation">
+                                  <tr>
+                                    <td class="grades__about-weight">
+                                      <div class="grades__weight">
+                                        <table role="presentation">
+                                          <tr>
+                                            <td class="grades__table-title">
+                                              <h2 class="title title--h2">Вес закрытых вакансий</h2>
+                                              <p class="text text--big">где %&nbsp;&mdash; процент от&nbsp;зарплаты рекрутера</p>
+                                              <div class="grades__attention">
+                                                <table>
+                                                  <tr>
+                                                    <td class="grades__icon">
+                                                      <!-- иконка в макете сломанная, подобрал аналог-->
+                                                      <svg width="32" height="32" aria-hidden="true">
+                                                        <use xlink:href="img/sprite_auto.svg#attention"></use>
+                                                      </svg>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">Аналогичные веса применяются к&nbsp;вакансиям в&nbsp;КПБ и&nbsp;на&nbsp;ГПХ</p>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="grades__scroll-container">
+                                              <div class="grades__scroll">
+                                                <table class="grades__table" role="table">
+                                                  <thead>
+                                                  <tr>
+                                                    <th>
+                                                      <p class="text text--bold">Грейд</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">8</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">9</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">10</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">11</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">12</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">13</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">14</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">15</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">16</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">17</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">18</p>
+                                                    </th>
+                                                    <th>
+                                                      <p class="text text--bold">19</p>
+                                                    </th>
+                                                  </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                  <tr>
+                                                    <td>
+                                                      <p class="text text--regular">Разработка</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">0%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">0%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">2%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">3%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">8%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">15%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">18%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">19%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">19%</p>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                      <p class="text text--regular">IT<br/> около-разработка</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">5%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">5%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">5%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">7%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">11%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">13%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">13%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">13%</p>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                      <p class="text text--regular">Бизнес</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">4%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">4%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">4%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">7%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">9%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">13%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">13%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">13%</p>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                      <p class="text text--regular">Продажи</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">1%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">4%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">4%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">4%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">6%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">8%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">13%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">13%</p>
+                                                    </td>
+                                                    <td>
+                                                      <p class="text text--bold">13%</p>
+                                                    </td>
+                                                  </tr>
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <table role="presentation">
+                                        <tr>
+                                          <td>
+                                            <div class="grades__info">
+                                              <table role="presentation">
+                                                <tr>
+                                                  <td class="grades__icon">
+                                                    <svg width="32" height="32" aria-hidden="true">
+                                                      <use xlink:href="img/sprite_auto.svg#attention"></use>
+                                                    </svg>
+                                                  </td>
+                                                  <td>
+                                                    <div class="grades__wrapper">
+                                                      <table role="presentation">
+                                                        <tr>
+                                                          <td>
+                                                            <div class="grades__info-head">
+                                                              <h2 class="title title--h3">Чтобы претендовать на&nbsp;бонус</h2>
+                                                              <p class="text text--big">Рекрутеры и&nbsp;младшие рекрутеры должны преодолеть порог в&nbsp;45%</p>
+                                                              <p class="text text--big">Старший рекрутер&nbsp;&mdash; порог в&nbsp;60%.</p>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>
+                                                            <h4 class="title title--h4">Например:</h4>
+                                                            <p class="text text--big">Вы&nbsp;набрали в&nbsp;общей сложности&nbsp;90% за&nbsp;закрытые вакансии, тогда:</p>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>
+                                                            <table class="grades__examples" role="presentation">
+                                                              <tr class="adaptive-block">
+                                                                <td class="adaptive-block">
+                                                                  <div class="grades__example">
+                                                                    <table>
+                                                                      <tr>
+                                                                        <td>
+                                                                          <p class="text text--big">Если вы&nbsp;рекрутер или младший рекрутер, ваш квартальный бонус рассчитают по&nbsp;схеме:</p>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td>
+                                                                          <p class="text text--bold">90%&nbsp;- 45% = 45% от&nbsp;ежемесячной зарплаты</p>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </table>
+                                                                  </div>
+                                                                </td>
+                                                                <td class="adaptive-block">
+                                                                  <div class="grades__example">
+                                                                    <table>
+                                                                      <tr>
+                                                                        <td>
+                                                                          <p class="text text--big">Если вы&nbsp;старший рекрутер, то&nbsp;по&nbsp;схеме</p>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td>
+                                                                          <p class="text text--bold">90%&nbsp;- 60% = 30% от&nbsp;ежемесячной зарплаты</p>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </table>
+                                                                  </div>
+                                                                </td>
+                                                              </tr>
+                                                            </table>
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </div>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="main-table__block">
+                          <table class="categories" role="presentation">
+                            <tr>
+                              <td>
+                                <h2 class="title title--h2">К&nbsp;каким категориям относятся профессии</h2>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table class="categories__blocks" role="presentation">
+                                  <tr>
+                                    <td class="adaptive-block categories__adaptive-block">
+                                      <table role="presentation">
+                                        <tr class="adaptive-block">
+                                          <td class="adaptive-block">
+                                            <div class="categories__element">
+                                              <div class="title title--h3">Разработка</div>
+                                              <ul class="categories__list">
+                                                <li class="categories__item">Back-end Developer
+                                                </li>
+                                                <li class="categories__item">Frontend Developer
+                                                </li>
+                                                <li class="categories__item">ML Developer
+                                                </li>
+                                                <li class="categories__item">MobApp Developer <span class='text__sub'>iOS, Android</span>
+                                                </li>
+                                                <li class="categories__item">Desktop Developer
+                                                </li>
+                                                <li class="categories__item">FullStack Developer
+                                                </li>
+                                                <li class="categories__item">Noc Developer
+                                                </li>
+                                                <li class="categories__item">DevOps
+                                                </li>
+                                                <li class="categories__item">Database Developer
+                                                </li>
+                                                <li class="categories__item">System Developer
+                                                </li>
+                                                <li class="categories__item">SysAdmin
+                                                </li>
+                                                <li class="categories__item">Analyst Developer
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </td>
+                                          <td class="adaptive-block">
+                                            <div class="categories__element">
+                                              <div class="title title--h3">IT<br/> (Около разработка)</div>
+                                              <ul class="categories__list">
+                                                <li class="categories__item">Analyse
+                                                </li>
+                                                <li class="categories__item">Designer UX/UI
+                                                </li>
+                                                <li class="categories__item">Product Manager IT
+                                                </li>
+                                                <li class="categories__item">Project Manager
+                                                </li>
+                                                <li class="categories__item">TechManager
+                                                </li>
+                                                <li class="categories__item">Tester
+                                                </li>
+                                                <li class="categories__item">Information security
+                                                </li>
+                                                <li class="categories__item">Network Engineer
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                    <td class="adaptive-block categories__adaptive-block">
+                                      <table role="presentation">
+                                        <tr class="adaptive-block">
+                                          <td class="adaptive-block">
+                                            <div class="categories__element">
+                                              <div class="title title--h3">Продажи, поддержка продаж</div>
+                                              <ul class="categories__list">
+                                                <li class="categories__item">BisDevManager
+                                                </li>
+                                                <li class="categories__item">ClientManager
+                                                </li>
+                                                <li class="categories__item">OnSiteSalesManagerRent
+                                                </li>
+                                                <li class="categories__item">PartnerManager
+                                                </li>
+                                                <li class="categories__item">PreSalesManager
+                                                </li>
+                                                <li class="categories__item">PreSalesTechEngineer
+                                                </li>
+                                                <li class="categories__item">Realtor
+                                                </li>
+                                                <li class="categories__item">SalesBisDevManager
+                                                </li>
+                                                <li class="categories__item">SalesClientManager
+                                                </li>
+                                                <li class="categories__item">SalesPartnerManager
+                                                </li>
+                                                <li class="categories__item">SalesProjectManager
+                                                </li>
+                                                <li class="categories__item">SalesSupportManager
+                                                </li>
+                                                <li class="categories__item">SolutionsArchitect
+                                                </li>
+                                                <li class="categories__item">TeleMarketManager
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </td>
+                                          <td class="adaptive-block">
+                                            <div class="categories__element">
+                                              <div class="title title--h3">Бизнес</div>
+                                              <ul class="categories__list">
+                                                <li class="categories__item">G&A
+                                                </li>
+                                                <li class="categories__item">Operation
+                                                  <ul class="categories__sublist">
+                                                    <li class="categories__subitem">Logistics, Purchase</li>
+                                                    <li class="categories__subitem">Content - Managers</li>
+                                                  </ul>
+                                                </li>
+                                                <li class="categories__item">Product
+                                                  <ul class="categories__sublist">
+                                                    <li class="categories__subitem">Marketing, Business, Category Manager, Editor, Producer, Designer</li>
+                                                  </ul>
+                                                </li>
+                                                <li class="categories__item">Support
+                                                  <ul class="categories__sublist">
+                                                    <li class="categories__subitem">TechSupport, SupportSpecialist, Engineer, ClientService</li>
+                                                  </ul>
+                                                </li>
+                                                <li class="categories__item">И другие
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="categories__news">
                                   <table role="presentation">
                                     <tr>
-                                      <td class="hero__about adaptive-block">
-                                        <!-- Для возможности замены картинки без пересборки проекта использовал к инлайновым стилям.-->
-                                        <!-- Иначе был бы див с позиционированием, но позиционирование нельзя использовать по ТЗ.-->
-                                        <div class="background-image" style="background-image: url(img/img.svg);">
-                                          <h2 class="title title--hero">KPI рекрутеров</h2>
-                                        </div>
+                                      <td>
+                                        <h4 class="title title--h4 categories__attention">Нововведение</h4>
+                                        <h4 class="title title--h4">Мы&nbsp;решили отказаться от&nbsp;использования профессии ProjectManager и&nbsp;разбить ее&nbsp;по&nbsp;принадлежности к&nbsp;функции</h4>
                                       </td>
-                                      <td class="adaptive-block">
-                                        <div class="hero__info">
-                                          <table role="presentation">
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <table class="categories__blocks">
+                                          <tr>
+                                            <td class="adaptive-block categories__adaptive-block">
+                                              <table role="presentation">
+                                                <tr class="adaptive-block">
+                                                  <td class="adaptive-block">
+                                                    <h5 class="text text--bold">ProjectManagerIT</h5>
+                                                    <p class="text text--regular">Руководят и&nbsp;координирует проекты Разработки/Аналитики</p>
+                                                  </td>
+                                                  <td class="adaptive-block">
+                                                    <h5 class="text text--bold">ProjectManagerBusiness</h5>
+                                                    <p class="text text--regular">Координируют и&nbsp;руководят проектами в&nbsp;сервисах Бизнеса</p>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                            <td class="adaptive-block categories__adaptive-block">
+                                              <table role="presentation">
+                                                <tr class="adaptive-block">
+                                                  <td class="adaptive-block">
+                                                    <h5 class="text text--bold">ProjectManagerBackoffice</h5>
+                                                    <p class="text text--regular">Курирует планирование и&nbsp;внедрение новых инициатив и&nbsp;процессов в&nbsp;поддерживающих функциях (HR, Legal, Finance, Maintenance)</p>
+                                                  </td>
+                                                  <td class="adaptive-block">
+                                                    <h5 class="text text--bold">SalesProjectManager</h5>
+                                                    <p class="text text--regular">Реализация и&nbsp;ведение специальных проектов, направленных на&nbsp;развитие продаж</p>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <hr>
+                                        <p class="text text--regular">Пожалуйста, при выставлении офера смотрите внимательно, какую профессию выбираете.</p>
+                                        <p class="text text--regular">Мы&nbsp;будем просить перевыставить оферы, если профессия указана не&nbsp;правильно.</p>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="main-table__block">
+                          <table class="faq" role="presentation">
+                            <tr>
+                              <td>
+                                <h2 class="title title--h2">Часто задаваемые вопросы</h2>
+                                <div class="faq__accordions">
+                                  <table>
+                                    <tr>
+                                      <td>
+                                        <div class="faq__question">
+                                          <table>
                                             <tr>
                                               <td>
-                                                <h4 class="title title--h4">Полезная информация</h4>
-                                                <ul class="hero__list">
-                                                  <li class="hero__link"><a class="link" href="#" target="_blank" rel="nofollow noopener noreferrer">Борд с&nbsp;автоматическим расчётом KPI</a>
-                                                  </li>
-                                                  <li class="hero__link"><a class="link" href="#" target="_blank" rel="nofollow noopener noreferrer">FAQ</a>
-                                                  </li>
-                                                  <li class="hero__link"><a class="link" href="#" target="_blank" rel="nofollow noopener noreferrer">Схема KPI до&nbsp;01.04.2023 года</a>
-                                                  </li>
-                                                </ul>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <table role="presentation">
-                                    <tr>
-                                      <td class="hero__type adaptive-block">
-                                        <div class="hero__type-block">
-                                          <h3 class="title title--h3">KPI РФ</h3>
-                                          <table class="hero__btn-wrapper adaptive-block" role="presentation">
-                                            <tr class="adaptive-block">
-                                              <td class="adaptive-block"><a class="link btn is-disabled" href="#">Русская версия</a>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                      </td>
-                                      <td class="hero__type hero__type--long adaptive-block">
-                                        <div class="hero__type-block">
-                                          <h3 class="title title--h3">KPI Межнар<span class="title__subtext">KPI International</span></h3>
-                                          <table class="hero__btn-wrapper adaptive-block" role="presentation">
-                                            <tr class="adaptive-block">
-                                              <td class="adaptive-block">
-                                                <button class="btn" type="button"><span class="btn__title">Русская версия</span>
-                                                </button>
-                                                <button class="btn" type="button"><span class="btn__title">English version</span>
-                                                </button>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="main-table__block">
-                            <table class="period" role="presentation">
-                              <tr>
-                                <td>
-                                  <h2 class="title title--h2">Период премирования</h2>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <table class="period__wrapper adaptive-block" role="presentation">
-                                    <tr class="adaptive-block">
-                                      <td class="adaptive-block">
-                                        <div class="period__info">
-                                          <p class="text text--regular">Рекрутеры, старшие и&nbsp;младшие:</p>
-                                          <h3 class="title title--h3">Ежеквартально по&nbsp;схеме KPI</h3>
-                                        </div>
-                                      </td>
-                                      <td class="adaptive-block">
-                                        <div class="period__info">
-                                          <p class="text text--regular">Ведущие рекрутеры:</p>
-                                          <h3 class="title title--h3">Полугодовые премии по&nbsp;итогам ревью</h3>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="main-table__block">
-                            <table class="grades" role="presentation">
-                              <tr>
-                                <td class="grades__head">
-                                  <h2 class="title title--h2">Количество и&nbsp;грейды принятых предложений о&nbsp;работе</h2>
-                                  <p class="text text--big">Каждой вакансии присвоен свой процентный вес&nbsp;<span class="text__sub">см. таблицу ниже.</span></p>
-                                  <p class="text text--big">Он&nbsp;зависит от&nbsp;грейда и&nbsp;специальности: Разработка, IT&nbsp;(около-разработка), Продажи или Бизнес</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <table role="presentation">
-                                    <tr>
-                                      <td class="grades__about-weight">
-                                        <div class="grades__weight">
-                                          <table role="presentation">
-                                            <tr>
-                                              <td class="grades__table-title">
-                                                <h2 class="title title--h2">Вес закрытых вакансий</h2>
-                                                <p class="text text--big">где %&nbsp;&mdash; процент от&nbsp;зарплаты рекрутера</p>
-                                                <div class="grades__attention">
-                                                  <table>
-                                                    <tr>
-                                                      <td class="grades__icon">
-                                                        <!-- иконка в макете сломанная, подобрал аналог-->
-                                                        <svg width="32" height="32" aria-hidden="true">
-                                                          <use xlink:href="img/sprite_auto.svg#attention"></use>
-                                                        </svg>
-                                                      </td>
-                                                      <td>
-                                                        <p class="text text--bold">Аналогичные веса применяются к&nbsp;вакансиям в&nbsp;КПБ и&nbsp;на&nbsp;ГПХ</p>
-                                                      </td>
-                                                    </tr>
-                                                  </table>
-                                                </div>
+                                                <table>
+                                                  <tr>
+                                                    <td>
+                                                      <p class="text text--bold">С&nbsp;какого числа начинает действовать новая схема?</p>
+                                                    </td>
+                                                    <td class="faq__icon">
+                                                      <svg width="17" height="8" aria-hidden="true">
+                                                        <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                                                      </svg>
+                                                    </td>
+                                                  </tr>
+                                                </table>
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td class="grades__scroll-container">
-                                                <div class="grades__scroll">
-                                                  <table class="grades__table" role="table">
-                                                    <thead>
-                                                      <tr>
-                                                        <th>
-                                                          <p class="text text--bold">Грейд</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">8</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">9</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">10</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">11</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">12</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">13</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">14</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">15</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">16</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">17</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">18</p>
-                                                        </th>
-                                                        <th>
-                                                          <p class="text text--bold">19</p>
-                                                        </th>
-                                                      </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                      <tr>
-                                                        <td>
-                                                          <p class="text text--regular">Разработка</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">0%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">0%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">2%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">3%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">8%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">15%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">18%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">19%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">19%</p>
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>
-                                                          <p class="text text--regular">IT<br/> около-разработка</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">5%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">5%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">5%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">7%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">11%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">13%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">13%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">13%</p>
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>
-                                                          <p class="text text--regular">Бизнес</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">4%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">4%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">4%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">7%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">9%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">13%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">13%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">13%</p>
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td>
-                                                          <p class="text text--regular">Продажи</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">1%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">4%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">4%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">4%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">6%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">8%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">13%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">13%</p>
-                                                        </td>
-                                                        <td>
-                                                          <p class="text text--bold">13%</p>
-                                                        </td>
-                                                      </tr>
-                                                    </tbody>
-                                                  </table>
-                                                </div>
+                                              <td>
+                                                <p class="text text--regular">Новая схема действует с&nbsp;1&nbsp;апреля 2023 года</p>
                                               </td>
                                             </tr>
                                           </table>
@@ -424,406 +752,94 @@
                                     </tr>
                                     <tr>
                                       <td>
-                                        <table role="presentation">
-                                          <tr>
-                                            <td>
-                                              <div class="grades__info">
-                                                <table role="presentation">
-                                                  <tr>
-                                                    <td class="grades__icon">
-                                                      <svg width="32" height="32" aria-hidden="true">
-                                                        <use xlink:href="img/sprite_auto.svg#attention"></use>
-                                                      </svg>
-                                                    </td>
-                                                    <td>
-                                                      <div class="grades__wrapper">
-                                                        <table role="presentation">
-                                                          <tr>
-                                                            <td>
-                                                              <div class="grades__info-head">
-                                                                <h2 class="title title--h3">Чтобы претендовать на&nbsp;бонус</h2>
-                                                                <p class="text text--big">Рекрутеры и&nbsp;младшие рекрутеры должны преодолеть порог в&nbsp;45%</p>
-                                                                <p class="text text--big">Старший рекрутер&nbsp;&mdash; порог в&nbsp;60%.</p>
-                                                              </div>
-                                                            </td>
-                                                          </tr>
-                                                          <tr>
-                                                            <td>
-                                                              <h4 class="title title--h4">Например:</h4>
-                                                              <p class="text text--big">Вы&nbsp;набрали в&nbsp;общей сложности&nbsp;90% за&nbsp;закрытые вакансии, тогда:</p>
-                                                            </td>
-                                                          </tr>
-                                                          <tr>
-                                                            <td>
-                                                              <table class="grades__examples" role="presentation">
-                                                                <tr class="adaptive-block">
-                                                                  <td class="adaptive-block">
-                                                                    <div class="grades__example">
-                                                                      <table>
-                                                                        <tr>
-                                                                          <td>
-                                                                            <p class="text text--big">Если вы&nbsp;рекрутер или младший рекрутер, ваш квартальный бонус рассчитают по&nbsp;схеме:</p>
-                                                                          </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                          <td>
-                                                                            <p class="text text--bold">90%&nbsp;- 45% = 45% от&nbsp;ежемесячной зарплаты</p>
-                                                                          </td>
-                                                                        </tr>
-                                                                      </table>
-                                                                    </div>
-                                                                  </td>
-                                                                  <td class="adaptive-block">
-                                                                    <div class="grades__example">
-                                                                      <table>
-                                                                        <tr>
-                                                                          <td>
-                                                                            <p class="text text--big">Если вы&nbsp;старший рекрутер, то&nbsp;по&nbsp;схеме</p>
-                                                                          </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                          <td>
-                                                                            <p class="text text--bold">90%&nbsp;- 60% = 30% от&nbsp;ежемесячной зарплаты</p>
-                                                                          </td>
-                                                                        </tr>
-                                                                      </table>
-                                                                    </div>
-                                                                  </td>
-                                                                </tr>
-                                                              </table>
-                                                            </td>
-                                                          </tr>
-                                                        </table>
-                                                      </div>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </div>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="main-table__block">
-                            <table class="categories" role="presentation">
-                              <tr>
-                                <td>
-                                  <h2 class="title title--h2">К&nbsp;каким категориям относятся профессии</h2>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <table class="categories__blocks" role="presentation">
-                                    <tr>
-                                      <td class="adaptive-block categories__adaptive-block">
-                                        <table role="presentation">
-                                          <tr class="adaptive-block">
-                                            <td class="adaptive-block">
-                                              <div class="categories__element">
-                                                <div class="title title--h3">Разбработка</div>
-                                                <ul class="categories__list">
-                                                  <li class="categories__item">Back-end Developer
-                                                  </li>
-                                                  <li class="categories__item">Frontend Developer
-                                                  </li>
-                                                  <li class="categories__item">ML Developer
-                                                  </li>
-                                                  <li class="categories__item">MobApp Developer <span class='text__sub'>iOS, Android</span>
-                                                  </li>
-                                                  <li class="categories__item">Desktop Developer
-                                                  </li>
-                                                  <li class="categories__item">FullStack Developer
-                                                  </li>
-                                                  <li class="categories__item">Noc Developer
-                                                  </li>
-                                                  <li class="categories__item">DevOps
-                                                  </li>
-                                                  <li class="categories__item">Database Developer
-                                                  </li>
-                                                  <li class="categories__item">System Developer
-                                                  </li>
-                                                  <li class="categories__item">SysAdmin
-                                                  </li>
-                                                  <li class="categories__item">Analyst Developer
-                                                  </li>
-                                                </ul>
-                                              </div>
-                                            </td>
-                                            <td class="adaptive-block">
-                                              <div class="categories__element">
-                                                <div class="title title--h3">IT<br/> (Около разбработка)</div>
-                                                <ul class="categories__list">
-                                                  <li class="categories__item">Analyse
-                                                  </li>
-                                                  <li class="categories__item">Designer UX/UI
-                                                  </li>
-                                                  <li class="categories__item">Product Manager IT
-                                                  </li>
-                                                  <li class="categories__item">Project Manager
-                                                  </li>
-                                                  <li class="categories__item">TechManager
-                                                  </li>
-                                                  <li class="categories__item">Tester
-                                                  </li>
-                                                  <li class="categories__item">Information security
-                                                  </li>
-                                                  <li class="categories__item">Network Engineer
-                                                  </li>
-                                                </ul>
-                                              </div>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                      <td class="adaptive-block categories__adaptive-block">
-                                        <table role="presentation">
-                                          <tr class="adaptive-block">
-                                            <td class="adaptive-block">
-                                              <div class="categories__element">
-                                                <div class="title title--h3">Продажи, поддержка продаж</div>
-                                                <ul class="categories__list">
-                                                  <li class="categories__item">BisDevManager
-                                                  </li>
-                                                  <li class="categories__item">ClientManager
-                                                  </li>
-                                                  <li class="categories__item">OnSiteSalesManagerRent
-                                                  </li>
-                                                  <li class="categories__item">PartnerManager
-                                                  </li>
-                                                  <li class="categories__item">PreSalesManager
-                                                  </li>
-                                                  <li class="categories__item">PreSalesTechEngineer
-                                                  </li>
-                                                  <li class="categories__item">Realtor
-                                                  </li>
-                                                  <li class="categories__item">SalesBisDevManager
-                                                  </li>
-                                                  <li class="categories__item">SalesClientManager
-                                                  </li>
-                                                  <li class="categories__item">SalesPartnerManager
-                                                  </li>
-                                                  <li class="categories__item">SalesProjectManager
-                                                  </li>
-                                                  <li class="categories__item">SalesSupportManager
-                                                  </li>
-                                                  <li class="categories__item">SolutionsArchitect
-                                                  </li>
-                                                  <li class="categories__item">TeleMarketManager
-                                                  </li>
-                                                </ul>
-                                              </div>
-                                            </td>
-                                            <td class="adaptive-block">
-                                              <div class="categories__element">
-                                                <div class="title title--h3">Бизнес</div>
-                                                <ul class="categories__list">
-                                                  <li class="categories__item">G&A
-                                                  </li>
-                                                  <li class="categories__item">Operation
-                                                    <ul class="categories__sublist">
-                                                      <li class="categories__subitem">Logistics, Purchase</li>
-                                                      <li class="categories__subitem">Content - Managers</li>
-                                                    </ul>
-                                                  </li>
-                                                  <li class="categories__item">Product
-                                                    <ul class="categories__sublist">
-                                                      <li class="categories__subitem">Marketing, Business, Category Manager, Editor, Producer, Designer</li>
-                                                    </ul>
-                                                  </li>
-                                                  <li class="categories__item">Support
-                                                    <ul class="categories__sublist">
-                                                      <li class="categories__subitem">TechSupport, SupportSpecialist, Engineer, ClientService</li>
-                                                    </ul>
-                                                  </li>
-                                                  <li class="categories__item">И другие
-                                                  </li>
-                                                </ul>
-                                              </div>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="categories__news">
-                                    <table role="presentation">
-                                      <tr>
-                                        <td>
-                                          <h4 class="title title--h4 categories__attention">Нововведение</h4>
-                                          <h4 class="title title--h4">Мы&nbsp;решили отказаться от&nbsp;использования профессии ProjectManager и&nbsp;разбить ее&nbsp;по&nbsp;принадлежности к&nbsp;функции</h4>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <table class="categories__blocks">
+                                        <div class="faq__question">
+                                          <table>
                                             <tr>
-                                              <td class="adaptive-block categories__adaptive-block">
-                                                <table role="presentation">
-                                                  <tr class="adaptive-block">
-                                                    <td class="adaptive-block">
-                                                      <h5 class="text text--bold">ProjectManagerIT</h5>
-                                                      <p class="text text--regular">Руководят и&nbsp;координирует проекты Разработки/Аналитики</p>
+                                              <td>
+                                                <table>
+                                                  <tr>
+                                                    <td>
+                                                      <p class="text text--bold">Получу&nbsp;ли я&nbsp;%&nbsp;за&nbsp;подготовку офера в&nbsp;системе по&nbsp;просьбе нанимающего менеджера, если я&nbsp;не&nbsp;искал кандидата?</p>
                                                     </td>
-                                                    <td class="adaptive-block">
-                                                      <h5 class="text text--bold">ProjectManagerBusiness</h5>
-                                                      <p class="text text--regular">Координируют и&nbsp;руководят проектами в&nbsp;сервисах Бизнеса</p>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                              <td class="adaptive-block categories__adaptive-block">
-                                                <table role="presentation">
-                                                  <tr class="adaptive-block">
-                                                    <td class="adaptive-block">
-                                                      <h5 class="text text--bold">ProjectManagerBackoffice</h5>
-                                                      <p class="text text--regular">Курирует планирование и&nbsp;внедрение новых инициатив и&nbsp;процессов в&nbsp;поддерживающих функциях (HR, Legal, Finance, Maintenance)</p>
-                                                    </td>
-                                                    <td class="adaptive-block">
-                                                      <h5 class="text text--bold">SalesProjectManager</h5>
-                                                      <p class="text text--regular">Реализация и&nbsp;ведение специальных проектов, направленных на&nbsp;развитие продаж</p>
+                                                    <td class="faq__icon">
+                                                      <svg width="17" height="8" aria-hidden="true">
+                                                        <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                                                      </svg>
                                                     </td>
                                                   </tr>
                                                 </table>
                                               </td>
                                             </tr>
+                                            <tr>
+                                              <td>
+                                                <p class="text text--regular">Нет. Если вы&nbsp;просто прокатили офер, сообщите об&nbsp;этом вашему руководителю, и&nbsp;автора офера в&nbsp;тикете поменяют на&nbsp;него. Такая прокатка не&nbsp;идёт в&nbsp;зачёт и&nbsp;не&nbsp;отражается на&nbsp;ваших дашбордах</p>
+                                              </td>
+                                            </tr>
                                           </table>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <hr>
-                                          <p class="text text--regular">Пожалуйста, при выставлении офера смотрите внимательно, какую профессию выбираете.</p>
-                                          <p class="text text--regular">Мы&nbsp;будем просить перевыставить оферы, если профессия указана не&nbsp;правильно.</p>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="main-table__block">
-                            <table class="faq" role="presentation">
-                              <tr>
-                                <td>
-                                  <h2 class="title title--h2">Часто задаваемые вопросы</h2>
-                                  <div class="faq__accordions">
-                                    <table>
-                                      <tr>
-                                        <td>
-                                          <div class="faq__question">
-                                            <table>
-                                              <tr>
-                                                <td>
-                                                  <p class="text text--bold">С&nbsp;какого числа начинает действовать новая схема?</p>
-                                                </td>
-                                                <td class="faq__icon">
-                                                  <svg width="17" height="8" aria-hidden="true">
-                                                    <use xlink:href="img/sprite_auto.svg#arrow"></use>
-                                                  </svg>
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                  <p class="text text--regular">Новая схема действует с&nbsp;1&nbsp;апреля 2023 года</p>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <div class="faq__question">
-                                            <table>
-                                              <tr>
-                                                <td>
-                                                  <p class="text text--bold">Получу&nbsp;ли я&nbsp;%&nbsp;за&nbsp;подготовку офера в&nbsp;системе по&nbsp;просьбе нанимающего менеджера, если я&nbsp;не&nbsp;искал кандидата?</p>
-                                                </td>
-                                                <td class="faq__icon">
-                                                  <svg width="17" height="8" aria-hidden="true">
-                                                    <use xlink:href="img/sprite_auto.svg#arrow"></use>
-                                                  </svg>
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                  <p class="text text--regular">Нет. Если вы&nbsp;просто прокатили офер, сообщите об&nbsp;этом вашему руководителю, и&nbsp;автора офера в&nbsp;тикете поменяют на&nbsp;него. Такая прокатка не&nbsp;идёт в&nbsp;зачёт и&nbsp;не&nbsp;отражается на&nbsp;ваших дашбордах</p>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <div class="faq__question">
-                                            <table>
-                                              <tr>
-                                                <td>
-                                                  <p class="text text--bold">Почему вес закрытий на&nbsp;18&nbsp;и&nbsp;19&nbsp;грейде одинаковый?</p>
-                                                </td>
-                                                <td class="faq__icon">
-                                                  <svg width="17" height="8" aria-hidden="true">
-                                                    <use xlink:href="img/sprite_auto.svg#arrow"></use>
-                                                  </svg>
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                  <p class="text text--regular">Закрывать вакансии 19+&nbsp;грейда&nbsp;&mdash; цель команды executive search. Если у&nbsp;нас случается такое закрытие&nbsp;&mdash; отлично, но&nbsp;это скорее исключение, и&nbsp;дополнительно за&nbsp;это мы&nbsp;не&nbsp;поощряем</p>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </main>
-                  </td>
-                </tr>
-              </table>
-              <table>
-                <tr>
-                  <td>
-                    <table role="presentation">
-                      <tr>
-                        <td>
-                          <div class="footer">
-                            <svg width="126" height="32" aria-hidden="true">
-                              <use xlink:href="img/sprite_auto.svg#logo"></use>
-                            </svg>
-                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="faq__question">
+                                          <table>
+                                            <tr>
+                                              <td>
+                                                <table>
+                                                  <tr>
+                                                    <td>
+                                                      <p class="text text--bold">Почему вес закрытий на&nbsp;18&nbsp;и&nbsp;19&nbsp;грейде одинаковый?</p>
+                                                    </td>
+                                                    <td class="faq__icon">
+                                                      <svg width="17" height="8" aria-hidden="true">
+                                                        <use xlink:href="img/sprite_auto.svg#arrow"></use>
+                                                      </svg>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>
+                                                <p class="text text--regular">Закрывать вакансии 19+&nbsp;грейда&nbsp;&mdash; цель команды executive search. Если у&nbsp;нас случается такое закрытие&nbsp;&mdash; отлично, но&nbsp;это скорее исключение, и&nbsp;дополнительно за&nbsp;это мы&nbsp;не&nbsp;поощряем</p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                     </table>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </center>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>
+                  <table role="presentation">
+                    <tr>
+                      <td>
+                        <div class="footer">
+                          <svg width="126" height="32" aria-hidden="true">
+                            <use xlink:href="img/sprite_auto.svg#logo"></use>
+                          </svg>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

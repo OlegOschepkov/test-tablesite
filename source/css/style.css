@@ -1090,6 +1090,7 @@ tr {
   width: 100%;
 }
 
-.faq__icon {
-  width: 17px;
+td.faq__icon {
+  width: 25px;
+  padding-left: 8px;
 }
